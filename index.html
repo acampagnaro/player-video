@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player Video</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/img/video-solid-24.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div>
+          <video id="videoAudio" >
+            <source src="assets/video/Tillmann_-_AUGE_ft_Caio_Luccas_Prod__yungdrum - 10Convert.com.mp4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div id="controller" class="controller">
+          <div class="controllers">
+            <img id="playPause" class="btn" src="assets/img/play-cirle-regular-50.png" alt="Play">
+            <img id="fastForward" class="btn" src="assets/img/fast-forward-circle-regular-48.png" alt="Fast Forward">
+            <img id="volumeVideo" onclick="mute()" class="btn" src="assets/img/volume-full-regular-50.png" alt="Volume">
+          </div>
+          <div class="progress">
+            <span id="timeLive">00:00</span>
+            <input type="range" id="progress" />
+            <span id="timeMax">00:00</span>
+          </div>
+          <div class="controlVol">
+            <input id="volumeInput" type="range" max="100" min="0" step="5" >
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
